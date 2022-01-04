@@ -1,0 +1,19 @@
+.button {
+  padding: 0.3rem 1rem;
+  border: none;
+  font-size: 1.1rem;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  color: #4b4b4bdc;
+  border-radius: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.button:hover, .button:focus {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 3px 3px;
+          box-shadow: rgba(255, 255, 255, 0.2) 0px 3px 3px;
+}

@@ -1,13 +1,182 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input {
+  font-weight: inherit;
+}
+
+button,
+input,
+label {
+  font-family: inherit;
+}
+
+.centered {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+}
+
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 1.5rem;
+}
+
+.switch-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.switch-wrapper > div {
+  position: absolute;
+  width: 100%;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 0 1rem;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  -webkit-animation: lds-dual-ring 1.2s linear infinite;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+.page-spinner {
+  width: 3.2rem;
+  height: 3.2rem;
+  z-index: 3;
+}
+
+.page-spinner:after {
+  width: 3rem;
+  height: 3rem;
+}
+
+@-webkit-keyframes lds-dual-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.fade-slide-in-top-appear {
+  opacity: 0;
+}
+
+.fade-slide-in-top-appear-active {
+  opacity: 0;
+  animation: fadeSlideInTop 310ms;
+}
+
+.fade-slide-in-top-appear-done {
+  opacity: 1;
+}
+
+@keyframes fadeSlideInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.fade-slide-in-bottom-appear {
+  opacity: 0;
+}
+
+.fade-slide-in-bottom-appear-active {
+  opacity: 0;
+  animation: fadeSlideInBottom 310ms;
+}
+
+.fade-slide-in-bottom-appear-done {
+  opacity: 1;
+}
+
+@keyframes fadeSlideInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.fade-enter, .fade-appear {
+  opacity: 0;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-enter-active, .fade-appear-active  {
+  animation: fadeIn 310ms;
+}
+
+.fade-exit-active {
+  animation: fadeIn 310ms;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

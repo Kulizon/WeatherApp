@@ -1,0 +1,115 @@
+.menu {
+  background: #fff;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.1)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  color: white;
+  padding: 0rem 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 40rem;
+}
+
+.menu form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.menu form > div:not(.spinning-wheel) {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 2rem 2rem;
+      grid-template-rows: 2rem 2rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.menu form > div:not(.spinning-wheel) label {
+  margin-left: 0.5rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.menu p {
+  margin-bottom: 1.25rem;
+  font-weight: bold;
+}
+
+.menu button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.menu label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.25rem;
+}
+
+.menu input[type="text"] {
+  margin: 1rem 0 1.5rem;
+  padding: 0.4rem 0.75rem;
+  font-size: 1.1rem;
+  border: none;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
+  color: #2b2b2b;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.menu input[type="text"]::-webkit-input-placeholder {
+  color: #949494;
+}
+
+.menu input[type="text"]:-ms-input-placeholder {
+  color: #949494;
+}
+
+.menu input[type="text"]::-ms-input-placeholder {
+  color: #949494;
+}
+
+.menu input[type="text"]::placeholder {
+  color: #949494;
+}
+
+.menu input[type="text"]:hover, .menu input[type="text"]:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.85);
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 3px 3px;
+          box-shadow: rgba(255, 255, 255, 0.2) 0px 3px 3px;
+}
+
+.menu input[type="text"]:focus {
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 3px 5px;
+          box-shadow: rgba(255, 255, 255, 0.2) 0px 3px 5px;
+}
+
+.spinning-wheel {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.error {
+  color: rgba(255, 0, 0, 0.7);
+}
+
+.success {
+  color: #157e15;
+}

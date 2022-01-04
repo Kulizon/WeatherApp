@@ -1,0 +1,9 @@
+.icon--up {
+  position: absolute;
+  top: 3rem;
+}
+
+.icon--down {
+  position: absolute;
+  bottom: 3rem;
+}

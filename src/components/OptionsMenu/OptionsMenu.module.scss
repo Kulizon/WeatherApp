@@ -1,0 +1,81 @@
+.menu {
+  background: #fff;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  color: white;
+  padding: 0rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 40rem;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    width: 100%;
+
+    & > div:not(.spinning-wheel) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 2rem 2rem;
+      margin: 1rem 0 0.5rem;
+
+      label {
+        margin-left: 0.5rem;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+
+  p {
+    margin-bottom: 1.25rem;
+    font-weight: bold;
+  }
+
+  button {
+    align-self: center;
+  }
+
+  label {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.25rem;
+  }
+
+  input[type="text"] {
+    margin: 1rem 0 1.5rem;
+    padding: 0.4rem 0.75rem;
+    font-size: 1.1rem;
+    border: none;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.7);
+    color: #2b2b2b;
+    transition: 0.2s;
+
+    &::placeholder {
+      color: #949494;
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background: rgba(255, 255, 255, 0.85);
+      box-shadow: rgba(255, 255, 255, 0.2) 0px 3px 3px;
+    }
+
+    &:focus {
+      box-shadow: rgba(255, 255, 255, 0.2) 0px 3px 5px;
+    }
+  }
+}
+
+.spinning-wheel {
+  align-self: center;
+}
+
+.error {
+  color: rgba(255, 0, 0, 0.7);
+}
+
+.success {
+  color: rgb(21, 126, 21);
+}
