@@ -8,7 +8,7 @@ import styles from "./WeekForecast.module.css";
 
 const WeekForecast = (props) => {
   return (
-    <div className="page">
+    <div className={`page ${styles.forecast}`}>
       <IconButton
         className={styles["icon--up"]}
         to="/today"

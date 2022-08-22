@@ -1,9 +1,4 @@
-.icon--up {
-  position: absolute;
-  top: 3rem;
+.forecast {
+  grid-template-rows: 4rem auto 4rem;
 }
 
-.icon--down {
-  position: absolute;
-  bottom: 3rem;
-}

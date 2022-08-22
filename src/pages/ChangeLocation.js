@@ -12,7 +12,7 @@ import styles from "./ChangeLocation.module.css";
 const ChangeLocation = () => {
   const [error, setError] = useState(null);
   const inputRef = useRef();
-  
+
   const dispatch = useDispatch();
   const history = useHistory();
 
@@ -39,9 +39,9 @@ const ChangeLocation = () => {
   };
 
   return (
-    <div className='page'>
+    <div className="page">
       <form action="" onSubmit={submitHandler} className={styles.form}>
-        <label htmlFor="cityName">Enter you adress...</label>
+        <label htmlFor="cityName">What's your adress?</label>
         <input type="text" id="cityName" ref={inputRef} placeholder="Kielce, 25-004..."></input>
         {error && <p>{error}</p>}
         {forecastError && <p>{forecastError}</p>}

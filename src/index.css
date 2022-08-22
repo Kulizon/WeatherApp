@@ -34,16 +34,17 @@ label {
   transform: translate(50%, 50%);
 }
 
-
 .page {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 4rem;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  justify-items: center;
   width: 100%;
   height: 100%;
   padding: 1rem 1.5rem;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 
 .switch-wrapper {
@@ -156,7 +157,8 @@ label {
   }
 }
 
-.fade-enter, .fade-appear {
+.fade-enter,
+.fade-appear {
   opacity: 0;
 }
 
@@ -164,7 +166,8 @@ label {
   opacity: 1;
 }
 
-.fade-enter-active, .fade-appear-active  {
+.fade-enter-active,
+.fade-appear-active {
   animation: fadeIn 310ms;
 }
 

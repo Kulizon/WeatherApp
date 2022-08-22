@@ -73,14 +73,14 @@ const OptionsMenu = () => {
 
     unit.checked = false;
     setUnitSubmitted(false);
-    setUnit()
+    setUnit();
   };
 
   return (
     <div className={styles.menu}>
       <form onSubmit={adressSubmitHandler}>
-        <label htmlFor="newAdress">Change your current weather adress.</label>
-        <input type="text" id="newAdress" placeholder="New Adress..." ref={adressRef} />
+        <label htmlFor="newAdress">What's your new adress?</label>
+        <input type="text" id="newAdress" placeholder="Your new adress..." ref={adressRef} />
         {adressError && <p className={styles.error}>{adressError}</p>}
         {adressSubmitted && forecastError && <p className={styles.error}>{forecastError}</p>}
         {adressSubmitted && positionError && <p className={styles.error}>{positionError}</p>}
@@ -90,11 +90,11 @@ const OptionsMenu = () => {
         {adressSubmitted && (isForecastLoading || isPositionLoading) && (
           <div className={`lds-dual-ring ${styles["spinning-wheel"]}`}></div>
         )}
-        <Button>Change Adress</Button>
+        <Button>Submit</Button>
       </form>
 
       <form onSubmit={unitSubmitHandler}>
-        <label>Change your preferable temperature unit.</label>
+        <label>What's your preferred unit?</label>
         <div>
           <div>
             <input type="radio" id="celsius" value="metric" name="unit" onChange={radioOnChangeHandler} />
@@ -115,7 +115,7 @@ const OptionsMenu = () => {
         {unitSubmitted && (isForecastLoading || isPositionLoading) && (
           <div className={`lds-dual-ring ${styles["spinning-wheel"]}`}></div>
         )}
-        <Button>Change Unit</Button>
+        <Button>Submit</Button>
       </form>
     </div>
   );

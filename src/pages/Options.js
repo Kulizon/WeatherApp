@@ -9,7 +9,7 @@ import styles from "./Options.module.css";
 
 const Options = () => {
   return (
-    <div className="page">
+    <div className={`page ${styles.options}`}>
       <IconButton
         className={styles.icon}
         to="/this-week"

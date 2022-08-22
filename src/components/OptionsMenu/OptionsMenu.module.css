@@ -14,7 +14,9 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  max-width: 40rem;
+  max-width: 30rem;
+  margin-top: 1rem;
+  width: 100%;
 }
 
 .menu form {
