@@ -71,6 +71,8 @@
   margin: 0 1.5rem;
   -webkit-perspective: 1000px;
           perspective: 1000px;
+  display: inline-block;
+  position: relative;
 }
 
 @media (max-width: 1300px) {
@@ -85,8 +87,14 @@
   height: 100%;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -101,6 +109,7 @@
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
 }
 
 .flip-card-back {
