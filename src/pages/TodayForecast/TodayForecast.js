@@ -1,12 +1,12 @@
 import { useSelector } from "react-redux";
 import { Redirect } from "react-router";
 
-import Day from "../components/Day/Day";
-import IconButton from "../components/UI/IconButton";
+import Day from "../../components/Day/Day";
+import IconButton from "../../components/UI/IconButton/IconButton";
 
-import ArrowDownIcon from "../assets/arrow-down-solid";
+import ArrowDownIcon from "../../assets/arrow-down-solid";
 
-import styles from "./TodayForecast.module.css";
+import styles from "./TodayForecast.module.scss";
 
 const getMonthName = (mon) => {
   return [

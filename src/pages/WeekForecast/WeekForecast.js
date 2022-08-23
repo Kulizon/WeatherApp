@@ -1,10 +1,10 @@
-import WeekForecastInfo from "../components/Week/WeekForecastInfo";
-import IconButton from "./../components/UI/IconButton";
+import WeekForecastInfo from "../../components/Week/WeekForecastInfo/WeekForecastInfo";
+import IconButton from "../../components/UI/IconButton/IconButton";
 
-import ArrowUp from "./../assets/arrow-up-solid";
-import ArrowDown from "../assets/arrow-down-solid";
+import ArrowUp from "../../assets/arrow-up-solid";
+import ArrowDown from "../../assets/arrow-down-solid";
 
-import styles from "./WeekForecast.module.css";
+import styles from "./WeekForecast.module.scss";
 
 const WeekForecast = (props) => {
   return (

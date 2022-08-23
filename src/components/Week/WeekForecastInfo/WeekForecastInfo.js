@@ -2,9 +2,9 @@ import { useSelector } from "react-redux";
 import { Redirect } from "react-router";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
-import WeekTile from "./WeekTile";
+import WeekTile from "./../WeekTile/WeekTile";
 
-import styles from "./WeekForecastInfo.module.css";
+import styles from "./WeekForecastInfo.module.scss";
 
 const getMonthName = (month) => {
   return [

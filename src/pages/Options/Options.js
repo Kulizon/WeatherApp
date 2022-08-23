@@ -1,11 +1,11 @@
 import { CSSTransition } from "react-transition-group";
 
-import IconButton from "../components/UI/IconButton";
-import OptionsMenu from "../components/OptionsMenu/OptionsMenu";
+import IconButton from "../../components/UI/IconButton/IconButton";
+import OptionsMenu from "../../components/OptionsMenu/OptionsMenu";
 
-import ArrowUp from "../assets/arrow-up-solid";
+import ArrowUp from "../../assets/arrow-up-solid";
 
-import styles from "./Options.module.css";
+import styles from "./Options.module.scss";
 
 const Options = () => {
   return (

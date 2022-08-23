@@ -1,13 +1,13 @@
 import { useHistory } from "react-router";
-import { getForecastData } from "../store/forecast";
+import { getForecastData } from "../../store/forecast";
 import { useDispatch, useSelector } from "react-redux";
 import { useState, useRef } from "react";
 
-import useHttp from "../hooks/useHttp";
+import useHttp from "../../hooks/useHttp";
 
-import Button from "../components/UI/Button";
+import Button from "../../components/UI/Button/Button";
 
-import styles from "./ChangeLocation.module.css";
+import styles from "./ChangeLocation.module.scss";
 
 const ChangeLocation = () => {
   const [error, setError] = useState(null);

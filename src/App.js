@@ -1,13 +1,12 @@
-
 import { Route, Redirect } from "react-router";
 import { AnimatedSwitch } from "react-router-transition";
 
-import ChangeLocation from "./pages/ChangeLocation";
-import TodayForecast from "./pages/TodayForecast";
-import WeekForecast from "./pages/WeekForecast";
-import Options from "./pages/Options";
+import ChangeLocation from "./pages/ChangeLocation/ChangeLocation";
+import TodayForecast from "./pages/TodayForecast/TodayForecast";
+import WeekForecast from "./pages/WeekForecast/WeekForecast";
+import Options from "./pages/Options/Options";
 
-import styles from "./App.module.css";
+import styles from "./App.module.scss";
 
 function App() {
   return (

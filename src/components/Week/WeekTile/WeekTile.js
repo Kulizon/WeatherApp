@@ -1,4 +1,4 @@
-import styles from "./WeekTile.module.css";
+import styles from "./WeekTile.module.scss";
 
 const WeekTile = (props) => {
   return (

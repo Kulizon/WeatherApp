@@ -5,9 +5,9 @@ import useHttp from "../../hooks/useHttp";
 import { getForecastData } from "../../store/forecast";
 import { optionsActions } from "../../store/options";
 
-import Button from "./../UI/Button";
+import Button from "../UI/Button/Button";
 
-import styles from "./OptionsMenu.module.css";
+import styles from "./OptionsMenu.module.scss";
 
 const OptionsMenu = () => {
   const dispatch = useDispatch();

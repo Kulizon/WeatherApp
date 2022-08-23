@@ -1,6 +1,6 @@
 import { CSSTransition } from "react-transition-group";
 
-import styles from "./Day.module.css";
+import styles from "./Day.module.scss";
 
 const Day = (props) => {
   return (
